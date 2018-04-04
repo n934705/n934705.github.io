@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- html>head>title^body>P>lorem -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,33 +10,47 @@
 
 <body>
     <h1>first web</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
     <!-- p>lorem5 -->
-    <p class="a">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
     <!-- p.a>lorem5 -->
-    <p id="a">Lorem ipsum dolor sit amet.</p>
+    <p class="a">Lorem ipsum dolor sit amet.</p>
     <!-- p#a>lorem5 -->
-    <p class="content post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, laboriosam?</p>
+    <p id="a">Lorem ipsum dolor sit amet.</p>
     <!-- p.content.post>lorem10 -->
-<div class="content">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-</div>
+    <p class="content post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, laboriosam?</p>
 <!-- .content>img*5 -->
+<div class="content">
+    <img src="https://source.unsplash.com/weekly?sky" width="200" height="300" alt="">
+    <img src="https://source.unsplash.com/featured/?nature,sky"width="400" height="300" alt="">
+    <img src="https://picsum.photos/200/300" alt=""> 
+    <img src="https://picsum.photos/200/300?image=335" alt="">
+    <img src="https://picsum.photos/200/300/?gravity=north" alt="">
+</div>
+<!-- (div>img+p.price+p.description>lorem3)*2 -->
 <div>
-    <img src="" alt="">
-    <p class="price"></p>
+    <img src="https://source.unsplash.com/weekly?water" width=20% alt="">
+    <p class="price">$250</p>
     <p class="description">Lorem, ipsum dolor.</p>
 </div>
 <div>
-    <img src="" alt="">
-    <p class="price"></p>
+    <img src="https://source.unsplash.com/featured/?nature,water" width=20% alt="">
+    <p class="price">$280</p>
     <p class="description">Accusantium, fuga harum.</p>
 </div>
-<!-- (div>img+p.price+p.description>lorem3)*2 -->
+<!-- br:強制換行 -->
+<p>Lorem ipsum <br> sit amet.</p>
+<!-- (h1{chapter $}+p>lorem5)*3 -->
+ <h1>chapter 1</h1>
+ <p>Lorem ipsum dolor sit amet.</p>
+ <h1>chapter 2</h1>
+ <p>Enim doloremque nihil odit officiis!</p>
+ <h1>chapter 3</h1>
+ <p>Provident saepe excepturi itaque ducimus!</p>
+<!-- 使用unsplash/lorem picsum -->
+<img src="https://source.unsplash.com/728DGN-qqnA/" width="600" height="400" alt="雪中小屋">
+<img src="https://picsum.photos/g/500/400/?random" alt="隨機">
+<!-- 超連結 另開視窗-->
+<a href="https://www.google.com" target="_blank">search</a>
+<a href="https://www.google.com" target="_blank"><img src="https://picsum.photos/g/500/400/?random" alt="隨機"></a>
 </body>
-
-</html>
+</html> 
