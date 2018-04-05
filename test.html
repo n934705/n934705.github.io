@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./sytle.css">
     <title>practive</title>
 </head>
 
@@ -47,15 +48,162 @@
  <h1>chapter 3</h1>
  <p>Provident saepe excepturi itaque ducimus!</p>
 <!-- 使用unsplash/lorem picsum -->
+<div>
 <img src="https://source.unsplash.com/728DGN-qqnA/" width="400" height="400" alt="雪中小屋">
 <img src="https://picsum.photos/g/500/400/?random" alt="隨機">
+</div>
 <!-- 超連結 另開視窗-->
+<div>
 <a href="https://www.google.com" target="_blank">search</a>
 <a href="https://www.google.com" target="_blank"><img src="https://picsum.photos/250/400/?image=806" alt=""></a>
+</div>
 <!-- 相對路徑 -->
+<div>
 <a href="./page/page1.html">公司簡介</a>
 <a href="./page/page2.html">產品介紹</a>
 <a href="./page/page3.html">組織架構</a>
-
+</div>
+<!--div 範例-->
+<div class="product-img">
+    <img src="https://source.unsplash.com/weekly?water/" width="300" height="300" alt="">
+</div>
+<div class="info">
+    <span class="price">$100 TWD </span>Lorem ipsum dolor sit amet.
+</div>
+<!--ol>li{項目$}*3--> 
+<ol>
+    <li>項目 1</li>
+    <li>項目 2</li>
+    <li>項目 3</li>
+</ol>
+<!--ul>li{list $}*5-->
+<ul>
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+    <li>list 5</li>
+</ul>
+<!--ol[type=a]>li{item $}*5-->
+<ol type="a">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+</ol>
+<!--ul[type="square"]>li{list item $}*5  -->
+<ul type="square">
+       <li>list item 1</li>
+       <li>list item 2</li>
+       <li>list item 3</li>
+       <li>list item 4</li>
+       <li>list item 5</li>
+</ul>
+<!--table>tr*5>td*3>{data $}-->
+<table>
+    <tr>
+        <td>data 1</td>
+        <td>data 2</td>
+        <td>data 3</td>
+    </tr>
+    <tr>
+        <td>data 1</td>
+        <td>data 2</td>
+        <td>data 3</td>
+    </tr>
+    <tr>
+        <td>data 1</td>
+        <td>data 2</td>
+        <td>data 3</td>
+    </tr>
+    <tr>
+        <td>data 1</td>
+        <td>data 2</td>
+        <td>data 3</td>
+    </tr>
+    <tr>
+        <td>data 1</td>
+        <td>data 2</td>
+        <td>data 3</td>
+    </tr>
+</table>
+<br>
+<!--table>(tr>(td>img[src=ppt.gif])+(td>a[href=lecture$.ppt]{lecture $}))*3 -->
+<table>
+    <tr>
+        <td><img src="ppt.gif" alt=""></td>
+        <td><a href="lecture1.ppt">lecture 1</a></td>
+    </tr>
+    <tr>
+        <td><img src="ppt.gif" alt=""></td>
+        <td><a href="lecture2.ppt">lecture 2</a></td>
+    </tr>
+    <tr>
+        <td><img src="ppt.gif" alt=""></td>
+        <td><a href="lecture3.ppt">lecture 3</a></td>
+    </tr>
+</table>
+<br>
+<!--合併儲存格 -->
+<table>
+    <tr>
+        <td rowspan="2" colspan="2">監獄兔<br>囚犯兩難</td>
+        <td colspan="2">基廉列克</td>
+    </tr>
+    <tr>
+        <td>招</td>
+        <td>不招</td>
+    </tr>
+    <tr>
+        <td rowspan="2">普亭</td>
+        <td>招</td>
+        <td>都關十年</td>
+        <td>死刑,關20年</td>
+    </tr>
+    <tr>
+        <td>不招</td>
+        <td>關20年,死刑</td>
+        <td>無罪釋放</td>
+    </tr>
+</table>
+<br>
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td colspan="4">1-4</td>
+        <td colspan="2">5-6</td>
+    </tr>
+</table>
+<br>
+<table>
+    <tr>
+        <td rowspan="4">1-4</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td rowspan="2">5-6</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>6</td>
+    </tr>
+</table>
 </body>
 </html> 
