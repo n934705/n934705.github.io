@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="./sytle.css">
     <title>practive</title>
 </head>
@@ -21,7 +23,7 @@
     <p class="content post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, laboriosam?</p>
 <!-- .content>img*5 -->
 <div class="content">
-    <img src="https://source.unsplash.com/weekly?sky" width="200" height="300" alt="">
+    <img src="https://source.unsplash.com/weekly?nature" width="200" height="300" alt="">
     <img src="https://source.unsplash.com/featured/?nature,sky"width="400" height="300" alt="">
     <img src="https://picsum.photos/200/300" alt=""> 
     <img src="https://picsum.photos/200/300?image=335" alt="">
@@ -49,7 +51,7 @@
  <p>Provident saepe excepturi itaque ducimus!</p>
 <!-- 使用unsplash/lorem picsum -->
 <div>
-<img src="https://source.unsplash.com/728DGN-qqnA/" width="400" height="400" alt="雪中小屋">
+<img src="https://source.unsplash.com/0DioAa9ItUA/700x400"alt="">
 <img src="https://picsum.photos/g/500/400/?random" alt="隨機">
 </div>
 <!-- 超連結 另開視窗-->
@@ -77,6 +79,7 @@
     <li>項目 2</li>
     <li>項目 3</li>
 </ol>
+<br>
 <!--ul>li{list $}*5-->
 <ul>
     <li>list 1</li>
@@ -85,6 +88,7 @@
     <li>list 4</li>
     <li>list 5</li>
 </ul>
+<br>
 <!--ol[type=a]>li{item $}*5-->
 <ol type="a">
     <li>item 1</li>
@@ -93,6 +97,7 @@
     <li>item 4</li>
     <li>item 5</li>
 </ol>
+<br>
 <!--ul[type="square"]>li{list item $}*5  -->
 <ul type="square">
        <li>list item 1</li>
@@ -101,6 +106,7 @@
        <li>list item 4</li>
        <li>list item 5</li>
 </ul>
+<br>
 <!--table>tr*5>td*3>{data $}-->
 <table>
     <tr>
@@ -133,15 +139,15 @@
 <!--table>(tr>(td>img[src=ppt.gif])+(td>a[href=lecture$.ppt]{lecture $}))*3 -->
 <table>
     <tr>
-        <td><img src="ppt.gif" alt=""></td>
+        <td><img src="ppt.gif" alt="test"></td>
         <td><a href="lecture1.ppt">lecture 1</a></td>
     </tr>
     <tr>
-        <td><img src="ppt.gif" alt=""></td>
+        <td><img src="ppt.gif" alt="test"></td>
         <td><a href="lecture2.ppt">lecture 2</a></td>
     </tr>
     <tr>
-        <td><img src="ppt.gif" alt=""></td>
+        <td><img src="ppt.gif" alt="test"></td>
         <td><a href="lecture3.ppt">lecture 3</a></td>
     </tr>
 </table>
@@ -222,6 +228,19 @@
 <label for="">蛋餅</label>
 <input type="checkbox" name="food" id="">
 <label for="">飯團</label>
-
+<!--css 設定繼承範例 -->
+<div class=hello1>
+    <p>ex1:hello world<br>(p繼承了.hello1 css)</p>
+</div> 
+<div>
+    <p>ex2:hello<span> world</span><br>(因span有自己的css所以不繼承div css)</p>
+</div>
+  <div>
+      <p><span class="title">ex3:hello</span>world1<br>(可設定class做為選擇器)</p>
+  </div> 
+<div>
+    <p><span>ex4:hello</span>world2<br>(未設定class,所以不會套用.title css)</p>
+</div>
+<br>
 </body>
 </html>
