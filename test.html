@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- html>head>title^body>P>lorem -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,9 @@
     <!-- <link rel="stylesheet" href="./reset.css"> -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="./sytle.css">
+    <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"> -->
     <title>practive</title>
 </head>
 
@@ -21,226 +25,306 @@
     <p id="a">Lorem ipsum dolor sit amet.</p>
     <!-- p.content.post>lorem10 -->
     <p class="content post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, laboriosam?</p>
-<!-- .content>img*5 -->
-<div class="content">
-    <img src="https://source.unsplash.com/weekly?nature" width="200" height="300" alt="">
-    <img src="https://source.unsplash.com/featured/?nature,sky"width="400" height="300" alt="">
-    <img src="https://picsum.photos/200/300" alt=""> 
-    <img src="https://picsum.photos/200/300?image=335" alt="">
-    <img src="https://picsum.photos/200/300/?gravity=north" alt="">
-</div>
-<!-- (div>img+p.price+p.description>lorem3)*2 -->
-<div>
-    <img src="https://source.unsplash.com/weekly?water" width=20% alt="">
-    <p class="price">$250</p>
-    <p class="description">Lorem, ipsum dolor.</p>
-</div>
-<div>
-    <img src="https://source.unsplash.com/featured/?nature,water" width=20% alt="">
-    <p class="price">$280</p>
-    <p class="description">Accusantium, fuga harum.</p>
-</div>
-<!-- br:強制換行 -->
-<p>Lorem ipsum <br> sit amet.</p>
-<!-- (h1{chapter $}+p>lorem5)*3 -->
- <h1>chapter 1</h1>
- <p>Lorem ipsum dolor sit amet.</p>
- <h1>chapter 2</h1>
- <p>Enim doloremque nihil odit officiis!</p>
- <h1>chapter 3</h1>
- <p>Provident saepe excepturi itaque ducimus!</p>
-<!-- 使用unsplash/lorem picsum -->
-<div>
-<img src="https://source.unsplash.com/0DioAa9ItUA/700x400"alt="">
-<img src="https://picsum.photos/g/500/400/?random" alt="隨機">
-</div>
-<!-- 超連結 另開視窗-->
-<div>
-<a href="https://www.google.com" target="_blank">search</a>
-<a href="https://www.google.com" target="_blank"><img src="https://picsum.photos/250/400/?image=806" alt=""></a>
-</div>
-<!-- 相對路徑 -->
-<div>
-<a href="./page/page1.html">公司簡介</a>
-<a href="./page/page2.html">產品介紹</a>
-<a href="./page/page3.html">組織架構</a>
-</div>
-<!--div 範例 (.product-img>img)+(.info>span.price{100twd}+lorem5)-->
+    <!-- .content>img*5 -->
+    <div class="content">
+        <img src="https://source.unsplash.com/weekly?nature" width="200" height="300" alt="">
+        <img src="https://source.unsplash.com/featured/?nature,sky" width="400" height="300" alt="">
+        <img src="https://picsum.photos/200/300" alt="">
+        <img src="https://picsum.photos/200/300?image=335" alt="">
+        <img src="https://picsum.photos/200/300/?gravity=north" alt="">
+    </div>
+    <!-- (div>img+p.price+p.description>lorem3)*2 -->
+    <div>
+        <img src="https://source.unsplash.com/weekly?water" width=20% alt="">
+        <p class="price">$250</p>
+        <p class="description">Lorem, ipsum dolor.</p>
+    </div>
+    <div>
+        <img src="https://source.unsplash.com/featured/?nature,water" width=20% alt="">
+        <p class="price">$280</p>
+        <p class="description">Accusantium, fuga harum.</p>
+    </div>
+    <!-- br:強制換行 -->
+    <p>Lorem ipsum
+        <br> sit amet.</p>
+    <!-- (h1{chapter $}+p>lorem5)*3 -->
+    <h1>chapter 1</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>chapter 2</h1>
+    <p>Enim doloremque nihil odit officiis!</p>
+    <h1>chapter 3</h1>
+    <p>Provident saepe excepturi itaque ducimus!</p>
+    <!-- 使用unsplash/lorem picsum -->
+    <div>
+        <img src="https://source.unsplash.com/0DioAa9ItUA/700x400" alt="">
+        <img src="https://picsum.photos/g/500/400/?random" alt="隨機">
+    </div>
+    <!-- 超連結 另開視窗-->
+    <div>
+        <a href="https://www.google.com" target="_blank">search</a>
+        <a href="https://www.google.com" target="_blank">
+            <img src="https://picsum.photos/250/400/?image=806" alt="">
+        </a>
+    </div>
+    <!-- 相對路徑 -->
+    <div>
+        <a href="./page/page1.html">公司簡介</a>
+        <a href="./page/page2.html">產品介紹</a>
+        <a href="./page/page3.html">組織架構</a>
+    </div>
+    <!--div 範例 (.product-img>img)+(.info>span.price{100twd}+lorem5)-->
 
-<div class="product-img">
-    <img src="https://source.unsplash.com/weekly?water/" width="300" height="300" alt="">
+    <div class="product-img">
+        <img src="https://source.unsplash.com/weekly?water/" width="300" height="300" alt="">
+    </div>
+    <div class="info">
+        <span class="price">$100 TWD </span>Lorem ipsum dolor sit amet.
+    </div>
+    <!--ol>li{項目$}*3-->
+    <ol>
+        <li>項目 1</li>
+        <li>項目 2</li>
+        <li>項目 3</li>
+    </ol>
+    <br>
+    <!--ul>li{list $}*5-->
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <li>list 5</li>
+    </ul>
+    <br>
+    <!--ol[type=a]>li{item $}*5-->
+    <ol type="a">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ol>
+    <br>
+    <!--ul[type="square"]>li{list item $}*5  -->
+    <ul type="square">
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+    </ul>
+    <br>
+    <!--table>tr*5>td*3>{data $}-->
+    <table>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+    </table>
+    <br>
+    <!--table>(tr>(td>img[src=ppt.gif])+(td>a[href=lecture$.ppt]{lecture $}))*3 -->
+    <table>
+        <tr>
+            <td>
+                <img src="ppt.gif" alt="test">
+            </td>
+            <td>
+                <a href="lecture1.ppt">lecture 1</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="ppt.gif" alt="test">
+            </td>
+            <td>
+                <a href="lecture2.ppt">lecture 2</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="ppt.gif" alt="test">
+            </td>
+            <td>
+                <a href="lecture3.ppt">lecture 3</a>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <!--合併儲存格 -->
+    <table>
+        <tr>
+            <td rowspan="2" colspan="2">監獄兔
+                <br>囚犯兩難</td>
+            <td colspan="2">基廉列克</td>
+        </tr>
+        <tr>
+            <td>招</td>
+            <td>不招</td>
+        </tr>
+        <tr>
+            <td rowspan="2">普亭</td>
+            <td>招</td>
+            <td>都關十年</td>
+            <td>死刑,關20年</td>
+        </tr>
+        <tr>
+            <td>不招</td>
+            <td>關20年,死刑</td>
+            <td>無罪釋放</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td colspan="4">1-4</td>
+            <td colspan="2">5-6</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td rowspan="4">1-4</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">5-6</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+        </tr>
+    </table>
+    <br>
+    <!-- input -->
+    <label for="">username</label>
+    <input type="text" placeholder="請輸入帳號">
+    <br>
+    <h1>您的性別:</h1>
+    <label for="">男</label>
+    <input type="radio" name="sex" id="man">
+    <label for="">女</label>
+    <input type="radio" name="sex" id="woman">
+    <br>
+    <h1>早餐想吃什麼?</h1>
+    <input type="checkbox" name="food" id="">
+    <label for="">蛋餅</label>
+    <input type="checkbox" name="food" id="">
+    <label for="">飯團</label>
+    <!--css 設定繼承及選擇器(class)範例 -->
+    <div class=hello1>
+        <p>ex1:hello world
+            <br>(p繼承了.hello1 css)</p>
+    </div>
+    <div>
+        <p class=center>ex2:hello
+            <span> world</span>
+            <br>(因span有自己的css所以不繼承p.center css)</p>
+    </div>
+    <div>
+        <p>
+            <span class="title">ex3:hello</span>world1
+            <br>(可設定class做為選擇器)</p>
+    </div>
+    <div>
+        <p>
+            <span>ex4:hello</span>world2
+            <br>(未設定class,所以不會套用.title css)</p>
+        <br>
+        <h1 class="shadow">Lorem ipsum dolor sit amet.</h1>
+    </div>
+    <br>
+    <!--css選擇器(id)範例  -->
+    <article id="article-1">目前「思源黑體」中文網頁字型部分僅開放於 Google Fonts: Early Access 頁面，什麼是 Early Access 呢？簡單來說，你可以把它想像成是測試版，在 Early Access 的字型還沒有被正式加入到 Google
+        Fonts 前，透過這項機制先收集使用者的意見回饋。</article>
+    <br>
+    <article id="article-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quisquam architecto expedita? Aperiam in, ea unde
+        suscipit dolores amet dolor labore voluptas hic repellat velit voluptatum excepturi odio quo, quis ipsam consectetur,
+        nisi quisquam laboriosam explicabo quam? Excepturi nesciunt nemo labore eos mollitia impedit animi quasi, reprehenderit,
+        consequatur qui sint!</article>
+    <br>
+    <!-- box範例 -->
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore culpa cum corrupti quaerat molestiae debitis quo
+            sapiente accusantium architecto voluptatibus!</div>
+    </div>
+    <!--  bootstrap應用範例-->
+    <img class=circle src="https://unsplash.it/200/200" alt="">
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus quos excepturi cumque obcaecati libero.
+    <a class="click" href="" class="btn btn-lg btn-primary">more info</a>
 </div>
-<div class="info">
-    <span class="price">$100 TWD </span>Lorem ipsum dolor sit amet.
+<br>
+<!--圖片背景範例/  -->
+<header>
+    <div class="container-flude">
+<h1>hello my first webpage</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 </div>
-<!--ol>li{項目$}*3--> 
-<ol>
-    <li>項目 1</li>
-    <li>項目 2</li>
-    <li>項目 3</li>
-</ol>
-<br>
-<!--ul>li{list $}*5-->
-<ul>
-    <li>list 1</li>
-    <li>list 2</li>
-    <li>list 3</li>
-    <li>list 4</li>
-    <li>list 5</li>
-</ul>
-<br>
-<!--ol[type=a]>li{item $}*5-->
-<ol type="a">
-    <li>item 1</li>
-    <li>item 2</li>
-    <li>item 3</li>
-    <li>item 4</li>
-    <li>item 5</li>
-</ol>
-<br>
-<!--ul[type="square"]>li{list item $}*5  -->
-<ul type="square">
-       <li>list item 1</li>
-       <li>list item 2</li>
-       <li>list item 3</li>
-       <li>list item 4</li>
-       <li>list item 5</li>
-</ul>
-<br>
-<!--table>tr*5>td*3>{data $}-->
-<table>
-    <tr>
-        <td>data 1</td>
-        <td>data 2</td>
-        <td>data 3</td>
-    </tr>
-    <tr>
-        <td>data 1</td>
-        <td>data 2</td>
-        <td>data 3</td>
-    </tr>
-    <tr>
-        <td>data 1</td>
-        <td>data 2</td>
-        <td>data 3</td>
-    </tr>
-    <tr>
-        <td>data 1</td>
-        <td>data 2</td>
-        <td>data 3</td>
-    </tr>
-    <tr>
-        <td>data 1</td>
-        <td>data 2</td>
-        <td>data 3</td>
-    </tr>
-</table>
-<br>
-<!--table>(tr>(td>img[src=ppt.gif])+(td>a[href=lecture$.ppt]{lecture $}))*3 -->
-<table>
-    <tr>
-        <td><img src="ppt.gif" alt="test"></td>
-        <td><a href="lecture1.ppt">lecture 1</a></td>
-    </tr>
-    <tr>
-        <td><img src="ppt.gif" alt="test"></td>
-        <td><a href="lecture2.ppt">lecture 2</a></td>
-    </tr>
-    <tr>
-        <td><img src="ppt.gif" alt="test"></td>
-        <td><a href="lecture3.ppt">lecture 3</a></td>
-    </tr>
-</table>
-<br>
-<!--合併儲存格 -->
-<table>
-    <tr>
-        <td rowspan="2" colspan="2">監獄兔<br>囚犯兩難</td>
-        <td colspan="2">基廉列克</td>
-    </tr>
-    <tr>
-        <td>招</td>
-        <td>不招</td>
-    </tr>
-    <tr>
-        <td rowspan="2">普亭</td>
-        <td>招</td>
-        <td>都關十年</td>
-        <td>死刑,關20年</td>
-    </tr>
-    <tr>
-        <td>不招</td>
-        <td>關20年,死刑</td>
-        <td>無罪釋放</td>
-    </tr>
-</table>
-<br>
-<table>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-    </tr>
-    <tr>
-        <td colspan="4">1-4</td>
-        <td colspan="2">5-6</td>
-    </tr>
-</table>
-<br>
-<table>
-    <tr>
-        <td rowspan="4">1-4</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td rowspan="2">5-6</td>
-        <td>5</td>
-    </tr>
-    <tr>
-        <td>6</td>
-    </tr>
-</table>
-<br>
-<!-- input -->
-<label for="">username</label>
-<input type="text" placeholder="請輸入帳號">
-<br>
-<h1>您的性別:</h1>
-<label for="">男</label>
-<input type="radio" name="sex" id="man">
-<label for="">女</label>
-<input type="radio" name="sex" id="woman">
-<br>
-<h1>早餐想吃什麼?</h1>
-<input type="checkbox" name="food" id="">
-<label for="">蛋餅</label>
-<input type="checkbox" name="food" id="">
-<label for="">飯團</label>
-<!--css 設定繼承範例 -->
-<div class=hello1>
-    <p>ex1:hello world<br>(p繼承了.hello1 css)</p>
-</div> 
-<div>
-    <p>ex2:hello<span> world</span><br>(因span有自己的css所以不繼承div css)</p>
+</header>
+<section>
+    <div class="container2">
+<div class="product">
+    <div class="thumbnail">
+        <img src="https://picsum.photos/300/200?image=1079" alt="">
+    </div>
+    <div class="description">
+        <p></p>
+        <a href=""></a>
+    </div>
 </div>
-  <div>
-      <p><span class="title">ex3:hello</span>world1<br>(可設定class做為選擇器)</p>
-  </div> 
-<div>
-    <p><span>ex4:hello</span>world2<br>(未設定class,所以不會套用.title css)</p>
+<div class="product">
+    <div class="thumbnail"><img src="https://picsum.photos/300/200?image=1080" alt=""></div>
+    <div class="description">
+        <p></p>
+        <a href=""></a>
+    </div>
 </div>
-<br>
+<div class="product">
+    <div class="thumbnail"><img src="https://picsum.photos/300/200?image=1081" alt=""></div>
+    <div class="description">
+        <p></p>
+        <a href=""></a>
+    </div>
+</div>
+    </div>
+</section>  
 </body>
+
 </html>

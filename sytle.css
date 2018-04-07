@@ -1,43 +1,158 @@
+/*@import属于CSS，只能加载CSS，等到页面都加载完成再被加载。  */
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/* 常用設定,設定最外層寬度(往內扣),可加框線看排版*/
 *{
-  margin: 5px;
-  padding: 0px;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+/* reset基本tag */
+h1,h2,h3,h4,h5,h6,p,body,html,nav,article,section,div,span{
+    padding: 0px;
+    margin: 0px;
 }
 
-.price{
-    color:blue;
+.price {
+    color: blue;
     font-weight: bold;
+    text-decoration: underline;
 }
 
-table,td{
-  border:1px solid green;
-  width:220px;
-  height:50px;
-  text-align:center;
-  border-collapse: collapse;
+table,td {
+    border: 1px solid green;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 3px;
+    padding: 1px;
+    text-align: left;
 }
 
-h1{
-  color: red;
-  font-size: 25px;
+h1 {
+    color: red;
+    font-size: 25px;
 }
 
-.hello1{
-  color:yellowgreen;
-  font-size: 45px;
+.hello1 {
+    color: yellowgreen;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-div{
-  color:green;
-  font-size:18px;
+/* 可以先設定css 再至html設定class套用 */
+.center{
+    text-align: center;
+    color:blueviolet;
+    font-size: 1.5em;
+    font-style: italic;
 }
 
-span{
-  color: gray;
-  font-size: 30px;
+div {
+    color: green;
+    font-size: 18px;
 }
 
-.title{
-  color: black;
-  font-size: 35px;
+span {
+    color:#2292a7;
+    font-size: 30px;
+}
+
+.title {
+    color: black;
+    font-size: 35px;
+}
+
+
+#article-1{
+    color:#ff6a00;
+    font-family: 'Noto Sans TC', sans-serif, serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+/* 使用google font */
+#article-2{
+    font-size: 1.5em;
+    color: purple;
+    font-family: 'Hi Melody',cursive;
+    font-style: oblique;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+.shadow{
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px grey;
+}
+
+/* 超連結css設定須按順序 */
+a:link{
+    color:blue;
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    text-decoration: underline;
+}
+
+/* box 設定 區塊置中 */
+.box{
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    padding: 10px;
+    text-align: left;
+    /* margin: auto;  */
+    border-radius: 20px;
+    background-color: #888;
+}
+
+.container{
+    width: 1250px;
+    margin: 5px 10px auto;
+    padding: 0px;
+    border: 1px solid black;
+    background-color:rgb(236, 231, 231);
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.click{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    text-align:center;
+    border-radius: 20px;
+    background-color:blue;
+}
+
+.container2{
+    width: 80%;
+    margin: 0 auto;
+    /* border:1px solid black; */
+}
+
+.container-flude{
+    width: 100%;
+}
+
+header{
+    padding-top: 400px;
+    padding-left: 20px;
+    height: 500px;
+    background-image: url(https://picsum.photos/1000/500?image=990);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+
 }
