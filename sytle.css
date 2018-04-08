@@ -127,19 +127,25 @@ a:active{
     border-radius: 50%;
 }
 
+a.click:visited{
+    color:white;
+}
+
+a.click:hover{
+    color:pink;
+}
+
 .click{
-    width: 20px;
-    height: 20px;
-    padding: 10px;
+    padding: 3px;
     text-align:center;
     border-radius: 20px;
-    background-color:blue;
+    background-color:turquoise;
 }
 
 .container2{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    /* border:1px solid black; */
+    border:1px solid black;
 }
 
 .container-flude{
@@ -153,6 +159,28 @@ header{
     background-image: url(https://picsum.photos/1000/500?image=990);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
+}
 
+.product{
+    width: 33.33%;
+    padding: 10px;
+    float: left;
+}
+
+.thumbnail img{
+    width: 100%;
+}
+
+.pokemon{
+    width: 120px;
+    height: 120px;
+    background-image:url("https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/montage-g1.jpg");
+    float: left;
+}
+.pokemon.no2{ 
+background-position: -240px -1920px;
+}
+.pokemon.no3{
+    background-position: -720px -2040px;
 }
