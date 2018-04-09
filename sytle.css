@@ -110,7 +110,7 @@ a:active{
     border: 10px solid black;
     padding: 10px;
     text-align: left;
-    /* margin: auto;  */
+    margin: auto; 
     border-radius: 20px;
     background-color: #888;
 }
@@ -137,9 +137,9 @@ a.click:hover{
 
 .click{
     padding: 3px;
-    text-align:center;
     border-radius: 20px;
     background-color:turquoise;
+    float: right;
 }
 
 .container2{
@@ -166,15 +166,22 @@ header{
     width: 33.33%;
     padding: 10px;
     float: left;
+    box-shadow: 10px 10px 10px -5px;
+    color: black;
 }
 
 .thumbnail img{
     width: 100%;
 }
 
+.description{
+    color: black;
+}
+
 .pokemon{
     width: 120px;
     height: 120px;
+    margin: 20px;
     background-image:url("https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/montage-g1.jpg");
     float: left;
 }
@@ -183,4 +190,9 @@ background-position: -240px -1920px;
 }
 .pokemon.no3{
     background-position: -720px -2040px;
+}
+.test{
+    color: #ff6a00;
+    float: left;
+    font-size: 30px;
 }
