@@ -27,13 +27,15 @@
     <p id="a">Lorem ipsum dolor sit amet.</p>
     <!-- p.content.post>lorem10 -->
     <p class="content post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, laboriosam?</p>
-    <!-- .content>img*5 -->
+    <!-- .content>img*5 使用unsplash/picsum範例 -->
     <div class="content">
         <img src="https://source.unsplash.com/weekly?nature" width="200" height="300" alt="">
         <img src="https://source.unsplash.com/featured/?nature,sky" width="400" height="300" alt="">
         <img src="https://picsum.photos/200/300" alt="">
         <img src="https://picsum.photos/200/300?image=335" alt="">
         <img src="https://picsum.photos/200/300/?gravity=north" alt="">
+        <img src="https://source.unsplash.com/0DioAa9ItUA/700x400" alt="">
+        <img src="https://picsum.photos/g/500/400/?random" alt="隨機">
     </div>
     <!-- (div>img+p.price+p.description>lorem3)*2 -->
     <div>
@@ -56,11 +58,6 @@
     <p>Enim doloremque nihil odit officiis!</p>
     <h1>chapter 3</h1>
     <p>Provident saepe excepturi itaque ducimus!</p>
-    <!-- 使用unsplash/lorem picsum -->
-    <div>
-        <img src="https://source.unsplash.com/0DioAa9ItUA/700x400" alt="">
-        <img src="https://picsum.photos/g/500/400/?random" alt="隨機">
-    </div>
     <!-- 超連結 另開視窗-->
     <div>
         <a href="https://www.google.com" target="_blank">search</a>
@@ -250,6 +247,7 @@
     <label for="">蛋餅</label>
     <input type="checkbox" name="food" id="">
     <label for="">飯團</label>
+    <br>
     <!--css 設定繼承及選擇器(class)範例 -->
     <div class=hello1>
         <p>ex1:hello world
@@ -274,6 +272,7 @@
     </div>
     <br>
     <!--css選擇器(id)範例  -->
+    <!-- :not()範例 -->
     <article id="article-1">目前「思源黑體」中文網頁字型部分僅開放於 Google Fonts: Early Access 頁面，什麼是 Early Access 呢？簡單來說，你可以把它想像成是測試版，在 Early Access 的字型還沒有被正式加入到 Google
         Fonts 前，透過這項機制先收集使用者的意見回饋。</article>
     <br>
@@ -301,7 +300,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
     </header>
-    <!--基本網頁範例(.product>.thumbnail>img^.description>p+a)*3 -->
+    <!--基本網頁範例 .container2>(.product>.thumbnail>img^.description>p+a)*3 -->
     <section>
         <div class="container2">
             <div class="product">
@@ -322,9 +321,11 @@
                     <a class=click href="">more</a>
                 </div>
             </div>
+            <!-- css:element1 element2 範例 -->
             <div class="product">
                 <div class="thumbnail">
                     <img src="https://picsum.photos/1000/500?image=1081" alt="">
+                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, accusamus.</p>
@@ -334,18 +335,145 @@
         </div>
     </section>
     <section>
-        <!-- 背景位置範例 -->
-        <div class="pokemon"></div>
-        <div class="pokemon no2"></div>
-        <div class="pokemon no3"></div>
+
         <!-- fontawesome 範例 -->
         <div>
-            <p class=test><i class="fas fa-user fa-lg"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsam tempora ab porro assumenda, obcaecati alias ad cum. Dignissimos, magnam?
-                <i class="fas fa-coffee fa-lg"></i></p>
+            <p class=test>
+                <i class="fas fa-user fa-lg "></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsam tempora ab porro assumenda, obcaecati
+                alias ad cum. Dignissimos, magnam?
+                <i class="fas fa-coffee fa-lg "></i>
+            </p>
         </div>
     </section>
-
-
+    <br>
+    <!-- css:element1+element2 範例 -->
+    <div></div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Explicabo earum voluptas voluptatibus eligendi!</p>
+    <p>Cum necessitatibus quas id ea.</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Qui explicabo dolor fugiat magnam!</p>
+        <p>Est molestias recusandae aliquid vel?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Itaque quae molestiae vel. Fugit.</p>
+    <p>Maiores ex debitis cum enim?</p>
+    <p>
+        <span>PS:暗紅色為緊接在div的P</span>
+    </p>
+    <br>
+    <!-- css:element1~element2 範例 -->
+    <div class="divP"></div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Explicabo e1rum voluptas voluptatibus eligendi!</p>
+    <p>Cum necessitatibus quas id ea.</p>
+    <div class="divP">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Qui explicabo dolor fugiat magnam!</p>
+        <p>Est molestias recusandae aliquid vel?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Itaque quae molestiae vel. Fugit.</p>
+    <p>Maiores ex debitis cum enim?</p>
+    <p>
+        <span>PS:暗藍色為與div一樣的父元素且同層的P</span>
+    </p>
+    <br>
+    <!-- css:.element1.element2 範例 -->
+    <!-- h1.title.important>lorem5 -->
+    <h1 class="title">Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, consectetur.</p>
+    <h1 class="title important">Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, fugiat?</p>
+    <h1 class="title">Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus?</p>
+    <p>
+        <span>PS:紅色為class是title及important的H1</span>
+    </p>
+    <br>
+    <!-- :first-child 範例 -->
+    <div>Lorem ipsum dolor sit amet.</div>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+    </div>
+    <div>
+        <P>Loreelit. Dolorem, non.</P>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>
+            <span>PS:框起來的部份是h2:first-child</span>
+        </p>
+    </div>
+    <br>
+    <!-- :nth-child(n)及 :first-of-type範例 -->
+    <table>
+        <tr class="t1">
+            <td>Lorem, ipsum.</td>
+            <td>Aspernatur, laborum.</td>
+            <td>Facilis, aliquid!</td>
+        </tr>
+        <tr class="t1">
+            <td>Facere, cum!</td>
+            <td>Architecto, sed!</td>
+            <td>Odio, quam.</td>
+        </tr>
+        <tr class="t1">
+            <td>Culpa, aliquam?</td>
+            <td>Vitae, consequuntur.</td>
+            <td>Eveniet, libero!</td>
+        </tr>
+        <tr class="t1">
+            <td>Error, distinctio.</td>
+            <td>Reiciendis, explicabo.</td>
+            <td>Nostrum, nihil!</td>
+        </tr>
+        <tr class="t1">
+            <td>Modi, eos.</td>
+            <td>Veritatis, corrupti?</td>
+            <td>At, voluptatibus?</td>
+        </tr>
+        <tr class="t1">
+            <td>Modi, eos.</td>
+            <td>Veritatis, corrupti?</td>
+            <td>At, voluptatibus?</td>
+        </tr>
+        <tr class="t1">
+            <td>Modi, eos.</td>
+            <td>Veritatis, corrupti?</td>
+            <td>At, voluptatibus?</td>
+        </tr>
+        <tr class="t1">
+            <td>Modi, eos.</td>
+            <td>Veritatis, corrupti?</td>
+            <td>At, voluptatibus?</td>
+        </tr>
+        <tr class="t1">
+            <td>Modi, eos.</td>
+            <td>Veritatis, corrupti?</td>
+            <td>At, voluptatibus?</td>
+        </tr>
+        <tr class="t1">
+            <td>Modi, eos.</td>
+            <td>Veritatis, corrupti?</td>
+            <td>At, voluptatibus?</td>
+        </tr>
+    </table>
+    <br>
+    <!--  :only-chlid 範例 -->
+    <article id="article-1">
+        <p class="t2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, doloremque!</p>
+    </article>
+    <p class="t2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, cupiditate.</p>
+    <br>
+    <!-- :before與:after範例 -->
+    <p class="text">這是一段文字</p>
+    <br>
+    <!-- 背景位置範例 -->
+    <div class="pokemon"></div>
+    <div class="pokemon no2"></div>
+    <div class="pokemon no3 "></div>
 </body>
 
 </html>
