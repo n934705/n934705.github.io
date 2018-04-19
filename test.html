@@ -18,6 +18,28 @@
 </head>
 
 <body>
+    <!-- 版面練習 -->
+    <header1>
+        <div class="container3">
+            <h1>hello world</h1>
+        </div>
+    </header1>
+    <section>
+        <div class="container3">
+            section
+        </div>
+    </section>
+    <div class="container3">
+        <footer>
+            footer
+        </footer>
+    </div>
+    <!-- <footer>
+        <div class="container-flude">
+            footer
+        </div>
+    </footer> -->
+
     <h1>first web</h1>
     <!-- p>lorem5 -->
     <p>Lorem ipsum dolor sit amet.</p>
@@ -39,12 +61,12 @@
     </div>
     <!-- (div>img+p.price+p.description>lorem3)*2 -->
     <div>
-        <img src="https://source.unsplash.com/weekly?water" width=20% alt="">
+        <img src="https://source.unsplash.com/weekly?water" width="20%" alt="">
         <p class="price">$250</p>
         <p class="description">Lorem, ipsum dolor.</p>
     </div>
     <div>
-        <img src="https://source.unsplash.com/featured/?nature,water" width=20% alt="">
+        <img src="https://source.unsplash.com/featured/?nature,water" width="20%" alt="">
         <p class="price">$280</p>
         <p class="description">Accusantium, fuga harum.</p>
     </div>
@@ -249,24 +271,24 @@
     <label for="">飯團</label>
     <br>
     <!--css 設定繼承及選擇器(class)範例 -->
-    <div class=hello1>
+    <div class="hello1">
         <p>ex1:hello world
             <br>(p繼承了.hello1 css)</p>
     </div>
     <div>
-        <p class=center>ex2:hello
+        <p class="center">ex2:hello
             <span> world</span>
             <br>(因span有自己的css所以不繼承p.center css)</p>
     </div>
     <div>
         <p>
             <span class="title">ex3:hello</span>world1
-            <br>(可設定class做為選擇器)</p>
+            <br>(可設定class=title做為選擇器)</p>
     </div>
     <div>
         <p>
             <span>ex4:hello</span>world2
-            <br>(未設定class,所以不會套用.title css)</p>
+            <br>(span未設定class,所以不會套用.title css)</p>
         <br>
         <h1 class="shadow">Lorem ipsum dolor sit amet.</h1>
     </div>
@@ -287,10 +309,11 @@
             sapiente accusantium architecto voluptatibus!</div>
     </div>
     <!--  bootstrap應用範例-->
-    <img class=circle src="https://unsplash.it/200/200" alt="">
+    <img class="circle" src="https://unsplash.it/200/200" alt="">
     <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus quos excepturi cumque obcaecati libero.
         <br>
-        <a class="click" href="" class="btn btn-lg btn-primary">more info</a>
+        <a class="click" href=""> more info</a>
+        <!-- <a class="btn btn-lg btn-primary" href=""> more info</a> -->
     </div>
     <br>
     <!--圖片背景範例/  -->
@@ -309,7 +332,7 @@
                 </div>
                 <div class="description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, hic.</p>
-                    <a class=click href="">more</a>
+                    <a class="click" href="">more</a>
                 </div>
             </div>
             <div class="product">
@@ -318,7 +341,7 @@
                 </div>
                 <div class="description">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, odit.</p>
-                    <a class=click href="">more</a>
+                    <a class="click" href="">more</a>
                 </div>
             </div>
             <!-- css:element1 element2 範例 -->
@@ -329,16 +352,15 @@
                 </div>
                 <div class="description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, accusamus.</p>
-                    <a class=click href="">more</a>
+                    <a class="click" href="">more</a>
                 </div>
             </div>
         </div>
     </section>
     <section>
-
         <!-- fontawesome 範例 -->
         <div>
-            <p class=test>
+            <p class="test">
                 <i class="fas fa-user fa-lg "></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsam tempora ab porro assumenda, obcaecati
                 alias ad cum. Dignissimos, magnam?
                 <i class="fas fa-coffee fa-lg "></i>
@@ -399,7 +421,7 @@
         <h2>Lorem ipsum dolor sit amet.</h2>
     </div>
     <div>
-        <P>Loreelit. Dolorem, non.</P>
+        <p> Loreelit. Dolorem, non.</p>
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
         <p>
@@ -462,7 +484,7 @@
     </table>
     <br>
     <!--  :only-chlid 範例 -->
-    <article id="article-1">
+    <article id="article-3">
         <p class="t2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, doloremque!</p>
     </article>
     <p class="t2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, cupiditate.</p>
@@ -470,10 +492,59 @@
     <!-- :before與:after範例 -->
     <p class="text">這是一段文字</p>
     <br>
-    <!-- 背景位置範例 -->
-    <div class="pokemon"></div>
-    <div class="pokemon no2"></div>
-    <div class="pokemon no3 "></div>
+    <!-- 屬性選擇器*/$/^=value範例 -->
+    <ul>
+        <li>
+            <a class="school" href="http://www.ntu.edu.tw">台大</a>
+        </li>
+        <li>
+            <a class="school" href="https://www.nnu.edu.tw">師大</a>
+        </li>
+        <li>
+            <a class="school" href="http://www.nccu.edu.tw">政大</a>
+        </li>
+        <li>
+            <a class="school" href="https://www.csie.ntu.edu.tw/info.pdf">資工系簡介</a>
+        </li>
+        <li>
+            <a class="school" href="https://www.csie.ntu.edu.tw/info2.pdf">資工課程簡介</a>
+        </li>
+    </ul>
+    <br>
+    <!-- 屬性選擇器範例 .box1#box$*5{box $}-->
+    <div class="box1" id="box1">box 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque obcaecati exercitationem maxime porro similique
+        explicabo libero soluta eaque vero a?</div>
+    <div class="box1" id="box2">box 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure labore, quis voluptatem vitae nostrum amet excepturi
+        error voluptates facilis iste.</div>
+    <div class="box1" id="box3">box 3</div>
+    <div class="box1" id="box4">box 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore maiores eaque odit eum omnis incidunt
+        alias totam enim hic.</div>
+    <div class="box1" id="box5">box 5</div>
+    <br>
+    <!-- 版面練習 -->
+    <div class="box7">
+        <div class="header">
+            header
+        </div>
+        <div class="container25">
+            <div class="content">
+                25%
+            </div>
+        </div>
+        <div class="container75">
+            <div class="content">
+                75%
+            </div>
+        </div>
+        <div class="footer">
+                footer
+        </div>
+    </div>
+
+        <!-- 背景位置範例 -->
+        <div class="pokemon"></div>
+        <div class="pokemon no2"></div>
+        <div class="pokemon no3 "></div>
 </body>
 
 </html>
