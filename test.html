@@ -494,31 +494,36 @@
     <br>
     <!-- 屬性選擇器*/$/^=value範例 -->
     <ul>
-        <li>
+        <li class="b">
             <a class="school" href="http://www.ntu.edu.tw">台大</a>
         </li>
-        <li>
+        <li class="b">
             <a class="school" href="https://www.nnu.edu.tw">師大</a>
         </li>
-        <li>
+        <li class="b">
             <a class="school" href="http://www.nccu.edu.tw">政大</a>
         </li>
-        <li>
+        <li class="b">
             <a class="school" href="https://www.csie.ntu.edu.tw/info.pdf">資工系簡介</a>
         </li>
-        <li>
+        <li class="b">
             <a class="school" href="https://www.csie.ntu.edu.tw/info2.pdf">資工課程簡介</a>
         </li>
     </ul>
     <br>
     <!-- 屬性選擇器範例 .box1#box$*5{box $}-->
-    <div class="box1" id="box1">box 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque obcaecati exercitationem maxime porro similique
-        explicabo libero soluta eaque vero a?</div>
-    <div class="box1" id="box2">box 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure labore, quis voluptatem vitae nostrum amet excepturi
-        error voluptates facilis iste.</div>
+
+    <div class="box1" id="box1">
+        <span class="underline">box 1:overflow:auto</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque obcaecati exercitationem maxime porro similique explicabo
+        libero soluta eaque vero a?</div>
+    <div class="box1" id="box2">
+        <span class="underline">box 2:overflow:scroll</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure labore, quis voluptatem
+        vitae nostrum amet excepturi error voluptates facilis iste.</div>
     <div class="box1" id="box3">box 3</div>
-    <div class="box1" id="box4">box 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore maiores eaque odit eum omnis incidunt
-        alias totam enim hic.</div>
+    <div class="box1" id="box4">
+        <span class="underline">box 4:overflow:hidden</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore maiores
+        eaque odit eum omnis incidunt alias totam enim hic.</div>
     <div class="box1" id="box5">box 5</div>
     <br>
     <!-- 版面練習 -->
@@ -527,24 +532,103 @@
             header
         </div>
         <div class="container25">
-            <div class="content">
+            <div class="content1">
                 25%
             </div>
         </div>
         <div class="container75">
-            <div class="content">
+            <div class="content1">
                 75%
             </div>
         </div>
         <div class="footer">
-                footer
+            footer
         </div>
+
     </div>
 
-        <!-- 背景位置範例 -->
-        <div class="pokemon"></div>
-        <div class="pokemon no2"></div>
-        <div class="pokemon no3 "></div>
+    <!-- CSS float overflow 範例 -->
+    <header>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </header>
+    <div class="container4">
+        <div class="left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio, nesciunt, culpa nemo repellendus quasi placeat
+            id et aperiam maxime cupiditate dolor possimus numquam? Sunt explicabo, repellat asperiores dolores amet mollitia
+            possimus maxime ducimus, est quasi facere nobis cumque, praesentium ratione. Ratione quia, nostrum quasi vitae
+            iure dolores praesentium porro.
+        </div>
+
+        <div class="right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio, nesciunt, culpa nemo repellendus quasi placeat
+            id et aperiam maxime cupiditate dolor possimus numquam? Sunt explicabo, repellat asperiores dolores amet mollitia
+            possimus maxime ducimus, est quasi facere nobis cumque, praesentium ratione. Ratione quia, nostrum quasi vitae
+            iure dolores praesentium porro.
+        </div>
+
+    </div>
+    <footer class="clearfix">footer</footer>
+
+    <!-- 版面練習 -->
+    <div class="box7">
+        <div class="nav">nav</div>
+        <div class="header">header</div>
+        <div class="container25-1"></div>
+        <div class="container50"></div>
+        <div class="container25-1"></div>
+        <div class="footer">footer</div>
+    </div>
+
+    <!-- inline-block 範例-->
+    test
+    <div id="box-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptate?</div>
+    <div id="box-2">Dolore sunt, totam sequi a debitis voluptatem aperiam quos odit!</div>
+    <div id="box-3">Sequi modi aliquam eos cupiditate numquam exercitationem maiores amet excepturi!</div>
+    test
+
+    <!-- 選單範例 -->
+    <nav>
+        <ul>
+            <li>menu item1
+                <ul>
+                    <li>sub memu1
+                        <ul>
+                            <li>menu</li>
+                            <li>menu</li>
+                            <li>menu</li>
+                        </ul>
+                    </li>
+                    <li>sub memu2</li>
+                    <li>sub memu3</li>
+                </ul>
+            </li>
+            <li>menu item2</li>
+            <li>menu item3
+                <ul>
+                    <li>sub memu1
+                        <ul>
+                            <li>menu</li>
+                            <li>menu</li>
+                            <li>menu</li>
+                        </ul>
+                    </li>
+                    <li>sub memu2</li>
+                    <li>sub memu3</li>
+                </ul>
+            </li>
+            <li>menu item4</li>
+            <li>menu item5</li>
+        </ul>
+    </nav>
+
+
+    <!-- 背景位置範例 -->
+    <div class="pokemon"></div>
+    <div class="pokemon no2"></div>
+    <div class="pokemon no3 "></div>
+
+
+
 </body>
 
 </html>

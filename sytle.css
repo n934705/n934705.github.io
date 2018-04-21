@@ -244,6 +244,11 @@ tr:hover {
 article:not(#article-2) {
   background: yellow;
 }
+
+.b {
+  height: 40px;
+}
+
 .text::before {
   content: "before";
   background: red;
@@ -254,9 +259,6 @@ article:not(#article-2) {
 }
 .text {
   background: palegoldenrod;
-}
-li {
-  height: 40px;
 }
 
 .school[href*="nt"] {
@@ -283,6 +285,7 @@ div[id^="box"] {
   width: 200px;
   height: 100px;
 }
+
 #box1 {
   overflow: auto;
 }
@@ -297,55 +300,143 @@ div[id^="box"] {
 
 footer {
   background: palevioletred;
-  height: 60px;
+  height: 30px;
   padding: 10px;
 }
 
-.header{
+.header,
+.nav {
   height: 10%;
-  border:1px solid blue;
+  border: 1px solid black;
 }
 
-.box7{
+.box7 {
   width: 500px;
   height: 500px;
-  border:2px solid black;
+  border: 2px solid black;
+  margin: 1%;
 }
 
-.container25{
+.container25 {
   width: 25%;
   height: 80%;
-  border:1px solid blue;
+  border: 1px solid black;
   padding: 2%;
   float: left;
+  color: brown;
 }
 
-.container75{
+.container25-1 {
+  width: 25%;
+  height: 70%;
+  border: 1px solid black;
+  padding: 2%;
+  float: left;
+  color: brown;
+}
+
+.container75 {
   width: 75%;
   height: 80%;
-  border:1px solid blue;
+  border: 1px solid black;
   padding: 2%;
   float: left;
+  color: brown;
 }
 
-.content{
-  width:100%;
-  height:100%;
-  border:1px solid blue;
+.container50 {
+  width: 50%;
+  height: 70%;
+  border: 1px solid black;
+  padding: 2%;
+  float: left;
+  color: brown;
+}
+
+.content1 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
   text-align: center;
+  color: brown;
 }
 
-.footer{
+.footer {
   height: 10%;
-  border:1px solid blue;
+  border: 1px solid black;
   float: left;
   width: 100%;
   padding-left: 10px;
 }
 
+.underline {
+  text-decoration-line: underline;
+  font-size: 18px;
+  color: #ff6a00;
+}
 
+.left {
+  width: 25%;
+  float: left;
+}
 
+.right {
+  width: 75%;
+  float: left;
+}
 
+.container4 {
+  border: 1px solid blue;
+  overflow: auto;
+  margin: 10px;
+}
 
+.clearfix {
+  clear: both;
+}
 
+[id^="box-"] {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 2px;
+}
 
+#box-2 {
+  height: 200px;
+}
+
+#box-3 {
+  height: 250px;
+}
+
+/* 選單CSS設定 */
+nav li ul {
+  border: 2px solid red;
+  display: none;
+}
+
+nav li:hover > ul {
+  border: 2px solid blue;
+  display: block;
+  width: 650px;
+  background: rgb(199, 197, 197);
+ 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+nav > ul > li {
+  border: 2px solid red;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  width: 130px;
+}
