@@ -26,55 +26,72 @@ span {
 }
 
 /* 選單CSS設定 */
-/* 子選單隱藏 */
-nav li ul {
-  border: 1px solid white;
-  display: none;
-  
-}
-/* 當mouse滑過去正下方的子選單一層一層打開 */
-nav li:hover > ul {
-  display:block;
-  background: black;
-}
-
-nav>ul>li>ul>li>ul{
-  position: absolute;
+/* nav固定在上方 */
+nav{
+  position: fixed;
   top:0px;
-  left:100%;
   width: 100%;
 }
 
+/* 主選單樣式 */
+nav>ul>li{
+  width: 20%;
+  background: gray;
+  color: white;
+  border:0.5px solid white;
+  text-align: center;
+  font-size: 30px;
+  display: block; 
+  float: left;
+}
+
+/* 子選單樣式 */
+
+nav li{
+  border:0.5px solid gary;
+  background:white;
+  color: black;
+}
+
+/* 選單樣式取消 */
+nav ul {
+  list-style-type: none;
+  padding:0px;
+  margin: 0px auto;
+}
+
+/* 主子選單點了不會全部打開 */
+nav li ul{
+  display: none;
+}
+/* 第二層打開 */
+nav>ul>li:hover>ul{
+  display: block;
+}
+/* 點選第二層樣式 */
+nav>ul>li:hover>ul li:hover{
+  background:teal;
+}
+
+/* 第三層打開 */
+nav>ul>li>ul>li:hover>ul{
+  display: block;
+}
+/* 點選第三層樣式 */
+nav>ul>li>ul>li:hover>ul li:hover{
+  background: tomato;
+}
+
+/* 設定第二層定位 */
 nav>ul>li>ul>li{
   position: relative;
 }
 
-nav > ul > li {
-  border: 1px solid white;
-  background: gray;
-  float: left;
-  text-align: center;
-  font-size: 20px;
-  width: 20%;
-  color: white;
-}
-
-nav ul{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li{
-  border: 0.5px solid white;
-}
-
-
-
-/* 固定在上方 */
-nav {
-  position: fixed;
-  top: 0;
+/* 設定第三層定位 */
+nav>ul>li>ul>li>ul{
+  position: absolute;
+  left: 100%;
+  top:0px;
   width: 100%;
 }
 
