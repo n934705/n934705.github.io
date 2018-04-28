@@ -1,0 +1,24 @@
+//跑loop 12次 因參數前有"-"不是拿來計算,所以用#{}包起來
+//可用codepan view compiled css
+//windows 須裝ruby-sass compiled
+//不同設備參數利用 @mixin建立混合器 @include使用混合器
+
+@mixin setup-grid($devicename) {
+  @for $i from 1 through 12 {
+    .col-#{$devicename}-#{$i} {
+      width: calc(100% * #{$i} / 12);
+    }
+  }
+}
+//順序xs-sm-md-lg
+//@media 設定breakpoint把@include放在大括號裡面
+@include setup-grid("xs");
+@media screen and(min-width:786px) {
+  @include setup-grid("sm");
+}
+@media screen and(min-width:992px) {
+  @include setup-grid("md");
+}
+@media screen and(min-width:1200px) {
+  @include setup-grid("lg");
+}
