@@ -2,10 +2,13 @@
   box-sizing: border-box;
 }
 
-header {
+header,footer {
   border: 1px solid black;
   height: 150px;
+  background-color: orange;
 }
+
+/* 設定overflow,footer才不會跑到上面 */
 .container {
   border: 2px solid black;
   overflow: auto;
@@ -58,7 +61,3 @@ header {
   }
 }
 
-footer {
-  border: 1px solid black;
-  height: 150px;
-}
