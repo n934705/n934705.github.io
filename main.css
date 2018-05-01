@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body,
+nav {
+  padding: 0px;
+  margin: 0px auto;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: hsla(0, 0%, 0%, 1);
+}
+
+.container-mark {
+  color: white;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin: 5px;
+  float: left;
+  padding: 5px;
+}
+
+.container-menu {
+  margin: 5px;
+  float: right;
+}
+
+.container-menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-menu li {
+  padding: 5px;
+  list-style-type: none;
+  float: left;
+  color: gray;
+  background-color: transparent;
+  border-top: 0.5px solid gray;
+  border-bottom: 0.5px solid gray;
+  border-right-color: 0.5px solid transparent;
+  border-left-color: 0.5px solid transparent;
+  font-size: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.container-menu li:hover {
+  transition: 1s ease-in-out;
+  background-color: rgb(110, 106, 106);
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.container-menu li:last-child {
+  border-right: 0.5px solid gray;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.container-menu li:first-child {
+  border-left: 0.5px solid gray;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}

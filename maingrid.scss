@@ -1,0 +1,24 @@
+@mixin grip-setup($devicename) {
+  $totalcolumn: 12;
+  @for $i from 1 through $totalcolumn {
+    .col-#{$devicename}-#{$i} {
+      width: calc(100% *#{$i}/#{$totalcolumn});
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  @include grip-setup("xs");
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  @include grip-setup("sm");
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  @include grip-setup("md");
+}
+
+@media screen and (min-width: 1200px) {
+  @include grip-setup("lg");
+}
