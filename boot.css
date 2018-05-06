@@ -1,0 +1,71 @@
+.row {
+    width: 100%;
+}
+
+.thumbnail>img,
+.thumbnail a>img,
+    {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.thumbnail>img,
+.thumbnail a>img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+    border-color: #337ab7;
+}
+
+.jumbotron {
+    background-image: url(https://source.unsplash.com/800x600?sea);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    color: gray;
+}
+
+.card a.btn {
+    float: right;
+    background-color: purple;
+}
