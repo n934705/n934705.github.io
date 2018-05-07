@@ -13,7 +13,6 @@
 .img-thumbnail {
     display: inline-block;
     max-width: 100%;
-    height: auto;
     padding: 4px;
     line-height: 1.42857143;
     background-color: #fff;
@@ -54,18 +53,25 @@ a.thumbnail.active {
     background-image: url(https://source.unsplash.com/800x600?sea);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 4px;
-    height: auto;
-    padding-left: 0px;
-    padding-right: 0px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    position: relative;
 }
 
 .jumbotron h1,
 .jumbotron p {
-    color: gray;
+    color:gray;
 }
 
 .card a.btn {
     float: right;
     background-color: purple;
 }
+
+.jumbotron ol.carousel-indicators {
+    position: absolute;
+    bottom:-40px;
+}
+
