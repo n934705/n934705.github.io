@@ -1,10 +1,21 @@
+.navbar {
+    background-color: wheat !important;
+}
+
+.active {
+    background-color: gray;
+}
+
 .row {
     width: 100%;
 }
 
+.container1 {
+    padding: 60px;
+}
+
 .thumbnail>img,
-.thumbnail a>img,
-    {
+.thumbnail a>img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -18,9 +29,9 @@
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .thumbnail {
@@ -31,9 +42,9 @@
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    -webkit-transition: border .2s ease-in-out;
-    -o-transition: border .2s ease-in-out;
-    transition: border .2s ease-in-out;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
 }
 
 .thumbnail>img,
@@ -50,7 +61,7 @@ a.thumbnail.active {
 }
 
 .jumbotron {
-    background-image: url(https://source.unsplash.com/800x600?sea);
+    background-image: url(https://source.unsplash.com/800x600?random);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
@@ -60,18 +71,124 @@ a.thumbnail.active {
     position: relative;
 }
 
-.jumbotron h1,
-.jumbotron p {
-    color:gray;
+[data-target$="carouselExampleFade2"] {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+[class$="sample1"] {
+    background-image: url(https://source.unsplash.com/800x600?water);
+    color: blue;
+}
+
+.card {
+    margin: 10px auto;
+    padding: 5px;
+}
+
+[class$="sample2"] {
+    background: black;
+    color: whitesmoke;
 }
 
 .card a.btn {
     float: right;
-    background-color: purple;
 }
 
-.jumbotron ol.carousel-indicators {
+fieldset {
+    width: 300px;
+    border: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #337ab7;
+}
+
+legend {
+    width: 250px;
+    padding: 5px 10px;
+    background-color: #4F709F;
+    color: #FFF;
+}
+
+#result1 {
+    display: none;
+}
+
+span {
+    color: blue;
+}
+
+.ans {
+    display: none;
+}
+
+[id^="box"] {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    line-height: 100px;
+    text-align: center;
+    border: 1px solid;
+    margin: 10px;
+    float: left;
+}
+
+.container {
+    overflow: auto;
+}
+
+#box1 {
+    display: none;
+}
+
+.container1 {
+    margin: 10px auto;
+    position: relative;
+    padding:20px 50px 20px 50px;
+}
+
+[id^="message"] {
+    width: 300px;
+    height: 50px;
     position: absolute;
-    bottom:-40px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+[id="message1"] {
+    top: 180px;
+    left: 50px;
+}
+
+[id="message2"] {
+    top: 405px;
+    left: 50px;
+}
+
+[id="message3"] {
+    top: 180px;
+    left: 350px;
+}
+
+[id="message4"] {
+    top: 405px;
+    left: 350px;
+}
+
+[name^="message"]{
+    width: 300px;
+    margin:3px auto;
+}
+
+.put{
+margin-left: 50px;
+}
+
+.pull{
+width: 100px;
+margin-top:10px;
+margin-left:310px;
 }
 
